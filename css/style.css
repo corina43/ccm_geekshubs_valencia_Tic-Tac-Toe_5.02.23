@@ -1,0 +1,28 @@
+body {
+    min-width: 360px;
+     font-family: Helvetica;
+     
+ }
+ 
+ .container-fluid-player1{
+ border-radius: 15px ;
+ border: 5px solid rgba(240, 234, 234, 0.868);
+ 
+ 
+ 
+ }
+ .container-fluid-player2{
+     border-radius: 15px ;
+     border: 5px solid rgba(240, 234, 234, 0.868);
+     
+     
+     
+     }
+     .container-fluid-table{
+         border-radius: 15px ;
+         border: 5px solid rgba(240, 234, 234, 0.868);
+         
+         
+         
+         }   
+        
