@@ -1,9 +1,9 @@
 //capturar datos de storage
-let inputNamePlayer1  = sessionStorage.getItem("namePlayer1");
-let inputNamePlayer2  = sessionStorage.getItem("namePlayer2");
+ let inputNamePlayer1  = sessionStorage.getItem("namePlayer1");
+ let inputNamePlayer2  = sessionStorage.getItem("namePlayer2");
 
-document.getElementById("player1").innerHTML = inputNamePlayer1;
-document.getElementById("player2").innerHTML = inputNamePlayer2;
+ document.getElementById("player1").innerHTML = inputNamePlayer1;
+ document.getElementById("player2").innerHTML = inputNamePlayer2;
 
    const playerselect = () =>{
 
