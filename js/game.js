@@ -8,7 +8,7 @@
    const playerselect = () =>{
 
    }
- 
+//  let nameScreen1 = document.getElementById(fichaP1)
  let tablero = Array.from(document.getElementsByClassName("box"));
 
  let turno = true;
@@ -46,7 +46,8 @@ const comprueboGanador = () => {
             // celda.innerHTML = `<p class='devil'>NUNCA LO ACABARAS</p>`;
 
 //             //Compruebo que SI puedo pintar la X o la O.
-             if((celda.innerHTML === "") && (fichaP1 > 0 || fichaP2 > 0)){
+             if(celda.innerHTML === "") {
+                if(fichaP1 > 0 || fichaP2 > 0){
 
 //                 //Aqui PINTO el simbolo, dependiendo del turno
                  celda.innerHTML = (turno) ? "X" : "O";
@@ -63,9 +64,13 @@ const comprueboGanador = () => {
                 comprueboGanador();
 
 //                 //Cambiamos de turno
-                 turno = !turno;
+                 turno = !turno;}
+            }else{
+                celda.innerHTML = (turno) ? "" : "";
+                
+                (turno) ? fichaP1 ++ : fichaP2++;
             }
          })
      }
- )
+ )//&& (fichaP1 > 0 || fichaP2 > 0))
 // console.log("hola")
