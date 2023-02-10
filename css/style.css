@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media only screen and (min-width: 360px) {
     .bodyItems {
       grid-template-columns: auto;
@@ -74,3 +75,148 @@ body{
     border-bottom: none;
 }
 
+=======
+body {
+    
+    font-family: Helvetica;
+    
+}
+:root{
+    font-size: 1em;
+}
+
+
+     .text-white2{
+       width: 28em;
+       height: 28em;
+       display: grid;
+       
+       grid-template-columns: auto auto auto;
+       margin-bottom: 2.5em;
+       margin-left: 1em;
+   
+       gap: 0;
+      
+    } 
+
+    .box{
+       width: 15vh;
+       height: 15vh;
+       border-right: 5px solid rgb(226, 219, 219);
+       border-bottom: 5px solid rgb(226, 219, 219); 
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 2rem;
+       line-height: 5rem;
+       cursor: pointer;
+       user-select: auto;
+       font-size: 15px;
+       font-weight: bold;
+        color: aliceblue; 
+       background-color: blue;
+   }  
+   
+    /* .box:nth-child(3n){
+       border-right: none;
+
+       
+   }  
+   .box:nth-child(n+7){
+       border-bottom: none;
+       
+   }   */
+   .picture{
+       background-image: url(../img/init.png);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: contain; 
+       align-items: center;
+       justify-content: center;
+       width: 10em;
+       height: 10em;
+    
+       
+   }
+   .card-player{
+       border-radius: 15px ;
+       border: 5px solid rgba(240, 234, 234, 0.868); 
+       width: 14em;
+       height: 25m;
+   
+   }
+   @media(max-width: 1024px ){
+       .text-white2{
+           width: 15em;
+           height: 15em;
+          
+           margin-bottom: 2.5em;
+        }
+        .box{
+           width:10vh;
+           height: 10vh;
+           
+       }   
+   }
+   @media(max-width: 576px ){
+       .text-white2{
+           width: 15em;
+           height: 15em;
+          
+           margin-bottom: 2.5em;
+        }
+       .box{
+           width: 10vh;
+           height: 10vh;
+           text-align: center;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-top: 2rem;
+          
+       }    
+   }
+   @media(max-width: 360px){
+       .text-white2{
+           width: 15em;
+           height: 15em;
+          
+           margin-bottom: 2.5em;
+        }
+       .box{
+           width: 10vh;
+           height: 10vh;
+           text-align: center;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-top: 2rem;
+           margin-right: 0;
+           margin-left: 0;
+           
+          
+       } 
+       .card-player{
+           border-radius: 10px ;
+           border: 5px solid rgba(240, 234, 234, 0.868); 
+           width: 8em;
+           height: 8em;
+           margin-top: 1.5em;
+       
+       }
+       .title{
+        font-size: 0.8rem;
+       }
+       .picture{
+        position: absolute;
+        top: -10%;
+         width: 5em;
+        height: 5em;
+        right: 10%;
+        
+    
+        
+    }  
+   }
+>>>>>>> 935d05a2be6e61c7555d6f64d473e81cd3c4b641
