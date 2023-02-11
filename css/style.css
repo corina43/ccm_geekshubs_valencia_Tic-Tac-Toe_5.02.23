@@ -1,81 +1,5 @@
-<<<<<<< HEAD
-@media only screen and (min-width: 360px) {
-    .bodyItems {
-      grid-template-columns: auto;
-      width: 25%;
-    }
-}
-html, body{
-    height: 100%;
-    width: 100%;
-}
 
-body{
-    
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.container-fluid-player1{
-    display: inline-block;
-    border-radius: 15px ;
-    justify-content: center;
-    align-items: center;
-    height: 25em;
-    border: 5px solid rgba(240, 234, 234, 0.868);
-    
-    
-    
-    }
-    .container-fluid-player2{
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-        height: 25em;
-        border-radius: 15px ;
-        border: 5px solid rgba(240, 234, 234, 0.868);
-        
-        
-        
-        }
-        .container-fluid-table{
-        
-            display: inline-block;
-            border-radius: 15px ;
-           
-            
-            
-            
-            }   
-           
-   
 
-.board{
-    height: 25em;
-    width: 25em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-
-.cellDesign{
-    border-bottom: 5px solid rgba(240, 234, 234, 0.868);
-    border-right: 5px solid rgba(240, 234, 234, 0.868);
-    font-size: 50px;
-    text-align: center;
-    line-height: 95px;
-    cursor: pointer;
-    user-select: none;
-}
-.cellDesign:nth-child(3n){
-    border-right: none;
-}
-.cellDesign:nth-child(n+7){
-    border-bottom: none;
-}
-
-=======
 body {
     
     font-family: Helvetica;
@@ -100,7 +24,7 @@ body {
     } 
 
     .box{
-       width: 15vh;
+       width: 15lvh;
        height: 15vh;
        border-right: 5px solid rgb(226, 219, 219);
        border-bottom: 5px solid rgb(226, 219, 219); 
@@ -185,8 +109,8 @@ body {
            margin-bottom: 2.5em;
         }
        .box{
-           width: 10vh;
-           height: 10vh;
+           width: 10svh;
+           height: 10svh;
            text-align: center;
            display: flex;
            justify-content: center;
@@ -200,9 +124,9 @@ body {
        .card-player{
            border-radius: 10px ;
            border: 5px solid rgba(240, 234, 234, 0.868); 
-           width: 8em;
-           height: 8em;
-           margin-top: 1.5em;
+           width: 8svh;
+           height: 8svh;
+           margin-top: 5em;
        
        }
        .title{
@@ -211,12 +135,64 @@ body {
        .picture{
         position: absolute;
         top: -10%;
-         width: 5em;
-        height: 5em;
+         width: 5svh;
+        height: 5svh;
         right: 10%;
-        
-    
-        
+           
     }  
    }
->>>>>>> 935d05a2be6e61c7555d6f64d473e81cd3c4b641
+   #ranGame , #start {
+    cursor: pointer;
+}
+
+#nextButton, #cleanButton {
+    background-color: grey;
+    cursor: default;
+}
+
+.modal-container{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.modal{
+    width: 60%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 10px;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+}
+
+.modal-close{
+    transform: translateY(-200%)
+}
+
+.modal img{
+    width: 30%;
+}
+
+.modal-text{
+    font-size: 1.5rem;
+    color: tomato;
+    text-align: center;
+}
+
+.start_button{
+    width: 120px;
+    font-size: 2rem;
+}
