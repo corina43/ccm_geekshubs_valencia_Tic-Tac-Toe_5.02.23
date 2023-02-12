@@ -3,4 +3,12 @@
  * Estructura pagina
      * pagina inicio
 
-     <div class="picture " ><img src="/img/Screenshot_45"  width="80em" alt=""id="img_player1" ></div>
+     
+![Screenshot_45](https://user-images.githubusercontent.com/121670547/218339601-1458c4f2-11ee-47b7-9324-ade220a4c807.png)
+
+
+
+      *  Select players
+      
+      
+  ![Screenshot_46](https://user-images.githubusercontent.com/121670547/218339627-373dea93-7bd2-44e5-b1bd-e119e3c96817.png)
