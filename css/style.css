@@ -71,6 +71,8 @@ body {
        background-color: blue;
    
    }
+
+
    @media(max-width: 1024px ){
        .text-white2{
            width: 15em;
@@ -145,6 +147,7 @@ body {
    #ranGame , #start {
     cursor: pointer;
 }
+
 
 #nextButton, #cleanButton {
     background-color: #0d11e6;

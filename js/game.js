@@ -7,39 +7,70 @@ document.getElementById("player1").innerHTML = inputNamePlayer1;
 document.getElementById("player2").innerHTML = inputNamePlayer2;
 
 
-// //TURNO GAME
 
 
 
-//Caracteres para el tablero
+
+let tablero = Array.from(document.getElementsByClassName("box"));
+
+let turno = true;
+
+let namePlayer1 = 3;
+let namePlayer2 = 3;
 
 
-//Elementos de la página
+let miTablero = ["","","","","","","","",""];
+
+let combinacionGanadora = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+
+const comprueboGanador = () => {
+    console.log(miTablero);
+
+}
+
+tablero.map((celda) => {
+        celda.addEventListener('click', ()=> {
+
+        
+            celda.classList.add('box');
+
+         
+
+       
+            if((celda.innerHTML === "")) {
+               if(namePlayer1 > 0 || namePlayer2 > 0){
+
+                                                      
+
+        celda.innerHTML = (turno) ? "X" : "O";//Aqui PINTO el simbolo, dependiendo del turno
 
 
-// class game{
-//     constructor(){
-//         this.tablero = new Cuadricula(this)
-//         this.turnoActual = "x";
-   
-//     }
-// cambiarTurnoActual(){
-//     this.turnoActual = this.turnoActual === "x" ? "0" : "x";
-// }
-//     jugarTurno(indice=null){
-//         this.tablero.dibujarJugada(indice);
-//         this.cambiarTurnoActual();
-//     }
-// }
-// class Cuadro {
-//     constructor(index){
-//         this.index = index
-//     }
-// }
-// class Cuadricula
-// let player1 = new Player(player1info.innerHTML, player1type);
-// let player2 = new Player(player2info.innerHTML, player2type);
+                (turno) ? namePlayer1 -- :  namePlayer2--;//                 //Después, dependiendo tambien de quien fuese el turno, le quito una ficha
+                //de las que puede poner
 
-//  const playerselect = () =>{}
-//  let nameScreen1 = document.getElementById(fichaP1)
 
+           
+                miTablero[celda.id] = (turno) ? "X" : "O";      //Finalmente, además de que en pantalla quede marcada, guardo la posición 
+                 //que ocupa en mi tablero lógico
+
+               comprueboGanador();
+
+                 //Cambiamos de turno
+                turno = !turno;}
+           }else{
+               celda.innerHTML = (turno) ? "" : "";
+               
+               (turno) ? namePlayer1 ++ : namePlayer2++;
+           }
+        })
+    }
+)
