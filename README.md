@@ -33,10 +33,12 @@
 
 
             *   marcar las casillas con "x" y "0" y cambiar su posicion en caso de no haber una combinacion ganadora
-                    *  estado conseguido 
+                    
+                     *  estado conseguido 
                     
                     
  ![Screenshot_48](https://user-images.githubusercontent.com/121670547/218340549-0442c9f7-a96a-440c-984a-6a8ceff425f6.png)
  
              * realizar e imprimir partida ganadora 
+             
                     * estado no conseguido
