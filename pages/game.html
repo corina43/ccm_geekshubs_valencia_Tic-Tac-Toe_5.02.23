@@ -21,11 +21,11 @@
     <!-- <h2 class="text-center">Tic Tac Toe...</h2>   -->
    <div class="row justify-content-center align-items-center">
        <div class="col-6 col-lg-3 px-2  text-white">
-           <div class="card  bg-info container-fluid justify-content-center align-items-center card-player">
+           <div class="card  container-fluid justify-content-center align-items-center card-player">
                <div class="card-body">
                    <h2 class="title mt-3 md-3  text-center p-5 " id="player1">Player 1</h2>
                    <span class="text center" id="player1TurnsLeft"><p class="card-text" id="player1TurnsText"></p></span> 
-                   <div class="picture"></div>
+                   <div class="picture " ><img src="/img/init.png"  width="80em" alt=""id="img_player1" ></div>
                    <div class="footer-card " id="playerinfo">
 
                        <!-- <p class="footer-card_p mt-md-sm-3 text-center p-5">Turn:</p>
@@ -36,23 +36,23 @@
        </div>
 
        <div class=" row col-12 col-sm-6 text-white2">
-           <div class="box"></div>
-           <div class="box"></div>
-           <div class="box"></div>
-           <div class="box"></div>
-           <div class="box"></div>
-           <div class="box"></div>
-           <div class="box"></div>
-           <div class="box"></div>
-           <div class="box"></div>
+       <div class="box" onclick="active_0()" id="box_active0"></div>
+       <div class="box" onclick="active_1()" id="box_active1"></div>
+       <div class="box" onclick="active_2()" id="box_active2"></div>
+       <div class="box" onclick="active_3()" id="box_active3"></div>
+       <div class="box" onclick="active_4()" id="box_active4"></div>
+       <div class="box" onclick="active_5()" id="box_active5"></div>
+       <div class="box" onclick="active_6()" id="box_active6"></div>
+       <div class="box" onclick="active_7()" id="box_active7"></div>
+       <div class="box" onclick="active_8()" id="box_active8"></div>
        </div>
 
        <div class="col-6 col-lg-3 px-2 text-white">
-           <div class="card bg-info  bg-info container-fluid justify-content-center align-items-center card-player">
+           <div class="card  container-fluid justify-content-center align-items-center card-player">
                <div class="card-body">
                    <h2 class="title mt-3 md-3  text-center p-5" id="player2">Player 2</h2>
                     <span class="text center" id="player2TurnsRight"><p class="card-text" id="player1TurnsText"></p></span> 
-                   <div class="picture"></div>
+                   <div class="picture"><img src="/img/init.png"  width="80em" alt=""id="img_player2" ></div>
                    <div class="footer-card" id="playerinfo">
                         <!-- <p class="footer-card mt-md-sm-3 text-center p-5" id="turn" >Turn:</p> -->
                     
@@ -62,10 +62,23 @@
        
    </div>
 </div>
+
+<div class="footer text-center">
+
+
+<button type="button" class="button_start   mt-5"aria-pressed="true" id="ranGame">Asignacion de partida </button>
+<button type="button" onclick="nextGame()" class="button_start  bg-warning mt-5"aria-pressed="true" id="nextButton" disabled>Siguente partida</button>
+<button type="button" onclick="resetButton()" class="button_start  bg-warning mt-5"aria-pressed="true" id="cleanButton" disabled>Reset game</button>
+</div>
+
+
+</div>
+
+</div>
  <!-- MODAL VENTANA ANIMACION-->
  <div class="modal-container">
     <div class = "modal modal-close">
-        <img src="./images/win.png" alt="Gana Inicio de partida">
+        <img src="../img/win.png" alt="Gana Inicio de partida">
         <div class="modal-text">
             <h1 id="playerInit"></h1>
         </div>
@@ -75,20 +88,9 @@
         </button>
     </div>
 </div>
-<div class="footer text-center">
-
-
-<button type="button" class="button_start_active   mt-5"aria-pressed="true" id="ranGame"><a href="/pages/select.html">Turn</a>  </button>
-<button type="button" class="button_ranking_active  bg-warning mt-5"aria-pressed="true" id="ranGame2"><a href="/pages/ranking.html">Ranking player</a>  </button>
-<button type="button" class="button_reset_active  bg-warning mt-5"aria-pressed="true" id="ranGame3"><a href="/pages/game.html">Reset game</a>  </button>
-</div>
-
-
-</div>
-
-</div>
-<script src="../js/random.js"></script>
 <script src="../js/game.js"></script>
+<script src="/js/random.js"></script>
+<script type="module" src="/js/index.js"></script>
 
 
   

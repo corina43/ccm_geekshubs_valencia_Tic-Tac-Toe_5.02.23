@@ -1,3 +1,4 @@
+import iniciarJuego from "./iniciarJuego.js";
 function random (nuevoJuego){
     let player1;
     const ranMacth = Math.floor(Math.random()*2) + 1;//1 O 2
@@ -15,8 +16,15 @@ function random (nuevoJuego){
     modal_container.getElementsByClassName.opacity = 1;
     modal_container.getElementsByClassName.visibility = "visible"
     modal.classList.toggle("modal-close");
-    iniciarJuego(nuevoJuego);
-    const button_ranGame = document.getElementById("ranGame")
+    iniciarJuego(nuevoJuego,player1);/********************** */
+    const button_ranGame = document.getElementById("ranGame");
      button_ranGame.disabled = true;
-     button_ranGame.style.backgroundColor = "green"
+     button_ranGame.style.backgroundColor = "green";
+     button_ranGame.style.cursor = "default";
+     const button_reset = document.getElementById("cleanButton");
+     button_reset.disabled = false;
+     button_reset.style.backgroundColor = "green";
+     button_reset.style.cursor = "pointer";
+     return player1
 }
+export default random;
